@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <meta property="og:title" content="This is a game" />
+    <meta property="og:description" content="this is its description" />
+  </head>
+  <body>
+    <div class="welcome">
+      <h1>Memory Game</h1>
+      <hr />
+      <div class="select">
+        <p>Select a Difficulty:</p>
+        <select id="difSel">
+          <option>None</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <button id="begBtn">Begin</button>
+    </div>
+    <div class="main-game">
+      <h1>Memory Game</h1>
+      <hr />
+      <div id="board">
+        
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

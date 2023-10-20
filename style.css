@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  border: 0;
+  background-color: #232323;
+  font-family: "Ubuntu", sans-serif;
+}
+.welcome {
+  display: block;
+  background-color: #232323;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+.welcome h1 {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+.welcome hr {
+  width: 300px;
+}
+#difSel {
+  display: flex;
+  position: relative;
+  margin: 100px auto;
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #343434;
+  color: #fff;
+}
+#difSel select option {
+  border-radius: 10px;
+}
+#begBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -60px auto;
+  padding: 10px;
+  width: 100px;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  background-color: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 3px solid #0059ff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+#begBtn:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #0059ff;
+  z-index: -1;
+}
+#begBtn :hover {
+  color: white;
+}
+
+#begBtn:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+#begBtn:active {
+  transform: scale(0.9);
+}
+.select p {
+  position: relative;
+  top: 90px;
+  right: 175px;
+  text-align: center;
+  color: #fff;
+}
+.main-game h1 {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+.main-game hr {
+  width: 300px;
+}
+#board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+}
+.tile {
+  width: 200px;
+  height: 200px;
+  border: 2px solid lightgrey;
+  margin: 10px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  border-radius: 5px;
+}
